@@ -1,0 +1,1853 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Maison Studio — Business Management</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="app">
+
+    <!-- MOBILE OVERLAY -->
+    <div class="mobile-overlay" id="mobileOverlay"></div>
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar" id="sidebar">
+
+        <div class="brand">
+            <div class="brand-logo">M</div>
+
+            <div>
+                <h1>Maison</h1>
+                <span>business studio</span>
+            </div>
+        </div>
+
+        <div class="workspace">
+            <div class="workspace-icon">MS</div>
+
+            <div>
+                <small>WORKSPACE</small>
+                <strong>Maison Studio</strong>
+            </div>
+
+            <span>⌄</span>
+        </div>
+
+
+        <nav class="sidebar-nav">
+
+            <p class="nav-title">MAIN MENU</p>
+
+            <button class="nav-item active" data-page="overview">
+                <span>⌂</span>
+                Overview
+            </button>
+
+            <button class="nav-item" data-page="analytics">
+                <span>◒</span>
+                Analytics
+            </button>
+
+            <button class="nav-item" data-page="clients">
+                <span>♧</span>
+                Clients
+                <b>12</b>
+            </button>
+
+            <button class="nav-item" data-page="projects">
+                <span>▧</span>
+                Projects
+                <b>8</b>
+            </button>
+
+            <button class="nav-item" data-page="transactions">
+                <span>◫</span>
+                Transactions
+            </button>
+
+
+            <p class="nav-title second">MANAGE</p>
+
+            <button class="nav-item" data-page="team">
+                <span>♙</span>
+                Team
+            </button>
+
+            <button class="nav-item" data-page="calendar">
+                <span>□</span>
+                Calendar
+                <b class="notification-count">3</b>
+            </button>
+
+
+            <p class="nav-title second">PERSONAL</p>
+
+            <button class="nav-item" data-page="settings">
+                <span>⚙</span>
+                Settings
+            </button>
+
+        </nav>
+
+
+        <div class="sidebar-bottom">
+
+            <div class="upgrade-card">
+
+                <div class="upgrade-star">✦</div>
+
+                <strong>Make more room.</strong>
+
+                <p>
+                    Upgrade your workspace and
+                    unlock more possibilities.
+                </p>
+
+                <button id="upgradeBtn">
+                    Explore plans →
+                </button>
+
+            </div>
+
+
+            <div class="sidebar-user">
+
+                <div class="user-avatar">HZ</div>
+
+                <div>
+                    <strong>Hijab Zahra</strong>
+                    <span>Administrator</span>
+                </div>
+
+                <button class="user-more">•••</button>
+
+            </div>
+
+        </div>
+
+    </aside>
+
+
+    <!-- MAIN AREA -->
+    <div class="main-area">
+
+        <!-- TOPBAR -->
+        <header class="topbar">
+
+            <button class="mobile-menu" id="mobileMenu">
+                ☰
+            </button>
+
+            <div class="breadcrumb">
+                <span>Maison Studio</span>
+                <i>/</i>
+                <strong id="breadcrumbTitle">Overview</strong>
+            </div>
+
+
+            <div class="top-actions">
+
+                <button class="round-button" id="globalSearch">
+                    ⌕
+                </button>
+
+                <button class="round-button notification-button" id="notificationBtn">
+                    ♡
+                    <i></i>
+                </button>
+
+                <button class="theme-button" id="themeToggle">
+                    ◐
+                </button>
+
+                <div class="top-profile">
+                    <div class="top-avatar">HZ</div>
+                    <div>
+                        <strong>Hijab</strong>
+                        <span>Admin</span>
+                    </div>
+                    <b>⌄</b>
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- PAGE CONTENT -->
+        <main class="page-container">
+
+
+            <!-- ================= OVERVIEW ================= -->
+
+            <section class="page active-page" id="page-overview">
+
+                <div class="page-heading">
+
+                    <div>
+                        <span class="eyebrow">MONDAY · OCTOBER 05, 2026</span>
+
+                        <h2>
+                            Good morning,
+                            <em>Hijab.</em>
+                        </h2>
+
+                        <p>
+                            Here's what's happening across your business today.
+                        </p>
+                    </div>
+
+                    <button class="primary-button" id="newProjectBtn">
+                        + New project
+                    </button>
+
+                </div>
+
+
+                <!-- STAT CARDS -->
+
+                <div class="stats-grid">
+
+                    <article class="stat-card dark-stat">
+
+                        <div class="stat-header">
+                            <span>Total revenue</span>
+                            <div>↗</div>
+                        </div>
+
+                        <h3>$84,260</h3>
+
+                        <div class="stat-change positive">
+                            +18.4%
+                            <small>vs. last month</small>
+                        </div>
+
+                        <div class="tiny-bars">
+                            <i style="height:25%"></i>
+                            <i style="height:42%"></i>
+                            <i style="height:31%"></i>
+                            <i style="height:55%"></i>
+                            <i style="height:48%"></i>
+                            <i style="height:67%"></i>
+                            <i style="height:61%"></i>
+                            <i style="height:82%"></i>
+                            <i style="height:73%"></i>
+                            <i style="height:95%"></i>
+                        </div>
+
+                    </article>
+
+
+                    <article class="stat-card">
+
+                        <div class="stat-header">
+                            <span>New clients</span>
+                            <div class="sage-icon">♡</div>
+                        </div>
+
+                        <h3>126</h3>
+
+                        <div class="stat-change positive">
+                            +12.8%
+                            <small>this month</small>
+                        </div>
+
+                        <div class="people-stack">
+                            <i>AL</i>
+                            <i>NK</i>
+                            <i>SC</i>
+                            <i>RM</i>
+                            <i>+8</i>
+                        </div>
+
+                    </article>
+
+
+                    <article class="stat-card">
+
+                        <div class="stat-header">
+                            <span>Active projects</span>
+                            <div class="cream-icon">✦</div>
+                        </div>
+
+                        <h3>32</h3>
+
+                        <div class="stat-change positive">
+                            +6
+                            <small>new this month</small>
+                        </div>
+
+                        <div class="progress-track">
+                            <div style="width:76%"></div>
+                        </div>
+
+                        <small class="progress-label">76% completed</small>
+
+                    </article>
+
+
+                    <article class="stat-card">
+
+                        <div class="stat-header">
+                            <span>Average order</span>
+                            <div class="rose-icon">↗</div>
+                        </div>
+
+                        <h3>$684</h3>
+
+                        <div class="stat-change positive">
+                            +9.2%
+                            <small>average value</small>
+                        </div>
+
+                        <svg class="mini-wave" viewBox="0 0 250 60">
+                            <path d="M0 50 C30 45,35 28,65 38 S95 10,125 28 S160 46,185 22 S215 18,250 4"/>
+                        </svg>
+
+                    </article>
+
+                </div>
+
+
+                <!-- ANALYTICS ROW -->
+
+                <div class="dashboard-grid">
+
+                    <article class="panel large-panel">
+
+                        <div class="panel-title">
+
+                            <div>
+                                <span class="section-label">PERFORMANCE</span>
+                                <h3>Revenue overview</h3>
+                            </div>
+
+                            <select id="revenuePeriod">
+                                <option>Last 6 months</option>
+                                <option>Last 12 months</option>
+                                <option>Last 3 months</option>
+                            </select>
+
+                        </div>
+
+
+                        <div class="revenue-heading">
+                            <strong id="overviewRevenue">$84,260</strong>
+                            <span>↗ 18.4%</span>
+                        </div>
+
+
+                        <div class="chart">
+
+                            <div class="y-axis">
+                                <span>$100k</span>
+                                <span>$75k</span>
+                                <span>$50k</span>
+                                <span>$25k</span>
+                                <span>$0</span>
+                            </div>
+
+                            <div class="chart-body">
+
+                                <div class="horizontal-line"></div>
+                                <div class="horizontal-line"></div>
+                                <div class="horizontal-line"></div>
+                                <div class="horizontal-line"></div>
+                                <div class="horizontal-line"></div>
+
+                                <svg viewBox="0 0 800 300" preserveAspectRatio="none">
+
+                                    <defs>
+                                        <linearGradient id="chartFill" x1="0" x2="0" y1="0" y2="1">
+                                            <stop offset="0%" stop-opacity=".22"/>
+                                            <stop offset="100%" stop-opacity="0"/>
+                                        </linearGradient>
+                                    </defs>
+
+                                    <path
+                                        class="chart-area-fill"
+                                        d="M0 250 C70 225 80 210 140 220 C190 230 210 165 270 180 C325 195 350 145 400 150 C460 158 485 100 535 115 C590 130 610 65 665 82 C710 95 755 52 800 30 L800 300 L0 300 Z"
+                                    />
+
+                                    <path
+                                        class="chart-main-line"
+                                        d="M0 250 C70 225 80 210 140 220 C190 230 210 165 270 180 C325 195 350 145 400 150 C460 158 485 100 535 115 C590 130 610 65 665 82 C710 95 755 52 800 30"
+                                    />
+
+                                </svg>
+
+                            </div>
+
+                            <div class="x-axis">
+                                <span>May</span>
+                                <span>Jun</span>
+                                <span>Jul</span>
+                                <span>Aug</span>
+                                <span>Sep</span>
+                                <span>Oct</span>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="panel">
+
+                        <div class="panel-title">
+                            <div>
+                                <span class="section-label">BREAKDOWN</span>
+                                <h3>Sales mix</h3>
+                            </div>
+
+                            <button class="dots-button">•••</button>
+                        </div>
+
+
+                        <div class="donut-container">
+
+                            <div class="donut-chart">
+
+                                <div>
+                                    <strong>100%</strong>
+                                    <span>Total sales</span>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="sales-items">
+
+                            <div>
+                                <span><i class="dot brown"></i> Web design</span>
+                                <strong>42%</strong>
+                            </div>
+
+                            <div>
+                                <span><i class="dot sage"></i> Development</span>
+                                <strong>31%</strong>
+                            </div>
+
+                            <div>
+                                <span><i class="dot sand"></i> Content</span>
+                                <strong>17%</strong>
+                            </div>
+
+                            <div>
+                                <span><i class="dot rose"></i> Other</span>
+                                <strong>10%</strong>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+
+                <!-- ACTIVITY -->
+
+                <div class="bottom-grid">
+
+                    <article class="panel">
+
+                        <div class="panel-title">
+
+                            <div>
+                                <span class="section-label">RECENT ACTIVITY</span>
+                                <h3>Latest transactions</h3>
+                            </div>
+
+                            <button class="text-button" data-page-link="transactions">
+                                View all →
+                            </button>
+
+                        </div>
+
+
+                        <div class="transaction-list">
+
+                            <div class="transaction-row">
+
+                                <div class="client-info">
+                                    <div class="avatar avatar-sand">AL</div>
+
+                                    <div>
+                                        <strong>Alina Studio</strong>
+                                        <span>Brand identity</span>
+                                    </div>
+                                </div>
+
+                                <span class="date">Oct 04</span>
+
+                                <strong>+$2,840</strong>
+
+                                <span class="status paid">Paid</span>
+
+                            </div>
+
+
+                            <div class="transaction-row">
+
+                                <div class="client-info">
+                                    <div class="avatar avatar-sage">NK</div>
+
+                                    <div>
+                                        <strong>Nika & Co.</strong>
+                                        <span>Website development</span>
+                                    </div>
+                                </div>
+
+                                <span class="date">Oct 03</span>
+
+                                <strong>+$4,250</strong>
+
+                                <span class="status pending">Pending</span>
+
+                            </div>
+
+
+                            <div class="transaction-row">
+
+                                <div class="client-info">
+                                    <div class="avatar avatar-rose">SC</div>
+
+                                    <div>
+                                        <strong>Studio Celine</strong>
+                                        <span>Social media package</span>
+                                    </div>
+                                </div>
+
+                                <span class="date">Oct 01</span>
+
+                                <strong>+$1,680</strong>
+
+                                <span class="status paid">Paid</span>
+
+                            </div>
+
+
+                            <div class="transaction-row">
+
+                                <div class="client-info">
+                                    <div class="avatar avatar-cream">RM</div>
+
+                                    <div>
+                                        <strong>Rumi Market</strong>
+                                        <span>E-commerce redesign</span>
+                                    </div>
+                                </div>
+
+                                <span class="date">Sep 29</span>
+
+                                <strong>+$3,920</strong>
+
+                                <span class="status paid">Paid</span>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="panel">
+
+                        <div class="panel-title">
+
+                            <div>
+                                <span class="section-label">YOUR PEOPLE</span>
+                                <h3>Team pulse</h3>
+                            </div>
+
+                            <span class="member-count">08 members</span>
+
+                        </div>
+
+
+                        <div class="team-mini">
+
+                            <div>
+                                <div class="avatar avatar-sand">SA</div>
+
+                                <section>
+                                    <strong>Sarah Ahmed</strong>
+                                    <span>Creative Director</span>
+                                </section>
+
+                                <i class="online"></i>
+                            </div>
+
+
+                            <div>
+                                <div class="avatar avatar-sage">MK</div>
+
+                                <section>
+                                    <strong>Maya Khan</strong>
+                                    <span>Product Designer</span>
+                                </section>
+
+                                <i class="online"></i>
+                            </div>
+
+
+                            <div>
+                                <div class="avatar avatar-rose">ZA</div>
+
+                                <section>
+                                    <strong>Zara Ali</strong>
+                                    <span>Developer</span>
+                                </section>
+
+                                <i></i>
+                            </div>
+
+
+                            <div>
+                                <div class="avatar avatar-cream">HA</div>
+
+                                <section>
+                                    <strong>Hamza Asif</strong>
+                                    <span>Content Strategist</span>
+                                </section>
+
+                                <i class="online"></i>
+                            </div>
+
+                        </div>
+
+
+                        <button class="outline-button" data-page-link="team">
+                            Manage team →
+                        </button>
+
+                    </article>
+
+                </div>
+
+            </section>
+
+
+            <!-- ================= ANALYTICS ================= -->
+
+            <section class="page" id="page-analytics">
+
+                <div class="page-heading">
+
+                    <div>
+                        <span class="eyebrow">BUSINESS INTELLIGENCE</span>
+
+                        <h2>
+                            Numbers tell
+                            <em>stories.</em>
+                        </h2>
+
+                        <p>
+                            Understand your growth, revenue and customer behaviour.
+                        </p>
+                    </div>
+
+                    <button class="secondary-button" id="exportAnalytics">
+                        ↓ Export report
+                    </button>
+
+                </div>
+
+
+                <div class="analytics-cards">
+
+                    <div class="analytics-card">
+                        <span>Revenue</span>
+                        <strong>$84,260</strong>
+                        <small class="positive">↑ 18.4%</small>
+                    </div>
+
+                    <div class="analytics-card">
+                        <span>Profit margin</span>
+                        <strong>68.7%</strong>
+                        <small class="positive">↑ 4.2%</small>
+                    </div>
+
+                    <div class="analytics-card">
+                        <span>Conversion</span>
+                        <strong>12.8%</strong>
+                        <small class="positive">↑ 2.1%</small>
+                    </div>
+
+                    <div class="analytics-card">
+                        <span>Retention</span>
+                        <strong>84.3%</strong>
+                        <small class="positive">↑ 5.7%</small>
+                    </div>
+
+                </div>
+
+
+                <div class="analytics-big-grid">
+
+                    <article class="panel">
+
+                        <div class="panel-title">
+                            <div>
+                                <span class="section-label">MONTHLY GROWTH</span>
+                                <h3>Revenue performance</h3>
+                            </div>
+
+                            <span class="chart-badge">+18.4%</span>
+                        </div>
+
+                        <div class="big-bars">
+
+                            <div><span style="height:42%"></span><small>May</small></div>
+                            <div><span style="height:51%"></span><small>Jun</small></div>
+                            <div><span style="height:46%"></span><small>Jul</small></div>
+                            <div><span style="height:63%"></span><small>Aug</small></div>
+                            <div><span style="height:72%"></span><small>Sep</small></div>
+                            <div><span style="height:91%"></span><small>Oct</small></div>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="panel insights-panel">
+
+                        <span class="section-label">SMART INSIGHTS</span>
+
+                        <h3>This month at a glance.</h3>
+
+                        <div class="insight">
+                            <div>↗</div>
+                            <p>
+                                Your revenue has grown for
+                                <strong>four consecutive months.</strong>
+                            </p>
+                        </div>
+
+                        <div class="insight">
+                            <div>✦</div>
+                            <p>
+                                Web design is currently your
+                                <strong>highest performing service.</strong>
+                            </p>
+                        </div>
+
+                        <div class="insight">
+                            <div>♡</div>
+                            <p>
+                                Client retention is up
+                                <strong>5.7%</strong> this quarter.
+                            </p>
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </section>
+
+
+            <!-- ================= CLIENTS ================= -->
+
+            <section class="page" id="page-clients">
+
+                <div class="page-heading">
+
+                    <div>
+                        <span class="eyebrow">RELATIONSHIPS</span>
+
+                        <h2>
+                            People behind
+                            <em>the work.</em>
+                        </h2>
+
+                        <p>
+                            Keep every client relationship beautifully organised.
+                        </p>
+                    </div>
+
+                    <button class="primary-button" id="addClientBtn">
+                        + Add client
+                    </button>
+
+                </div>
+
+
+                <div class="toolbar">
+
+                    <div class="search-field">
+                        ⌕
+                        <input
+                            type="text"
+                            id="clientSearch"
+                            placeholder="Search clients..."
+                        >
+                    </div>
+
+                    <select id="clientFilter">
+                        <option value="all">All clients</option>
+                        <option value="active">Active</option>
+                        <option value="new">New</option>
+                    </select>
+
+                </div>
+
+
+                <div class="clients-grid" id="clientsGrid">
+
+                    <article class="client-card" data-name="Alina Studio" data-type="active">
+
+                        <div class="client-card-top">
+                            <div class="large-avatar avatar-sand">AS</div>
+                            <span class="client-status active">Active</span>
+                        </div>
+
+                        <h3>Alina Studio</h3>
+                        <p>Fashion & lifestyle</p>
+
+                        <div class="client-meta">
+                            <span>Projects <strong>4</strong></span>
+                            <span>Revenue <strong>$12.4k</strong></span>
+                        </div>
+
+                        <button class="card-link">View profile →</button>
+
+                    </article>
+
+
+                    <article class="client-card" data-name="Nika & Co." data-type="active">
+
+                        <div class="client-card-top">
+                            <div class="large-avatar avatar-sage">NC</div>
+                            <span class="client-status active">Active</span>
+                        </div>
+
+                        <h3>Nika & Co.</h3>
+                        <p>Technology startup</p>
+
+                        <div class="client-meta">
+                            <span>Projects <strong>3</strong></span>
+                            <span>Revenue <strong>$18.7k</strong></span>
+                        </div>
+
+                        <button class="card-link">View profile →</button>
+
+                    </article>
+
+
+                    <article class="client-card" data-name="Studio Celine" data-type="new">
+
+                        <div class="client-card-top">
+                            <div class="large-avatar avatar-rose">SC</div>
+                            <span class="client-status new">New</span>
+                        </div>
+
+                        <h3>Studio Celine</h3>
+                        <p>Creative studio</p>
+
+                        <div class="client-meta">
+                            <span>Projects <strong>2</strong></span>
+                            <span>Revenue <strong>$7.8k</strong></span>
+                        </div>
+
+                        <button class="card-link">View profile →</button>
+
+                    </article>
+
+
+                    <article class="client-card" data-name="Rumi Market" data-type="active">
+
+                        <div class="client-card-top">
+                            <div class="large-avatar avatar-cream">RM</div>
+                            <span class="client-status active">Active</span>
+                        </div>
+
+                        <h3>Rumi Market</h3>
+                        <p>E-commerce brand</p>
+
+                        <div class="client-meta">
+                            <span>Projects <strong>5</strong></span>
+                            <span>Revenue <strong>$21.2k</strong></span>
+                        </div>
+
+                        <button class="card-link">View profile →</button>
+
+                    </article>
+
+
+                    <article class="client-card" data-name="Mira House" data-type="new">
+
+                        <div class="client-card-top">
+                            <div class="large-avatar avatar-sand">MH</div>
+                            <span class="client-status new">New</span>
+                        </div>
+
+                        <h3>Mira House</h3>
+                        <p>Interior design</p>
+
+                        <div class="client-meta">
+                            <span>Projects <strong>1</strong></span>
+                            <span>Revenue <strong>$3.2k</strong></span>
+                        </div>
+
+                        <button class="card-link">View profile →</button>
+
+                    </article>
+
+
+                    <article class="client-card" data-name="Oak & Olive" data-type="active">
+
+                        <div class="client-card-top">
+                            <div class="large-avatar avatar-sage">OO</div>
+                            <span class="client-status active">Active</span>
+                        </div>
+
+                        <h3>Oak & Olive</h3>
+                        <p>Hospitality</p>
+
+                        <div class="client-meta">
+                            <span>Projects <strong>2</strong></span>
+                            <span>Revenue <strong>$9.1k</strong></span>
+                        </div>
+
+                        <button class="card-link">View profile →</button>
+
+                    </article>
+
+                </div>
+
+            </section>
+
+
+            <!-- ================= PROJECTS ================= -->
+
+            <section class="page" id="page-projects">
+
+                <div class="page-heading">
+
+                    <div>
+                        <span class="eyebrow">WORKSPACE</span>
+
+                        <h2>
+                            Work in
+                            <em>motion.</em>
+                        </h2>
+
+                        <p>
+                            See what is moving, what is waiting and what comes next.
+                        </p>
+                    </div>
+
+                    <button class="primary-button" id="projectAddButton">
+                        + New project
+                    </button>
+
+                </div>
+
+
+                <div class="project-tabs">
+
+                    <button class="project-tab active" data-project-filter="all">
+                        All <span>8</span>
+                    </button>
+
+                    <button class="project-tab" data-project-filter="progress">
+                        In progress <span>5</span>
+                    </button>
+
+                    <button class="project-tab" data-project-filter="review">
+                        In review <span>2</span>
+                    </button>
+
+                    <button class="project-tab" data-project-filter="done">
+                        Completed <span>1</span>
+                    </button>
+
+                </div>
+
+
+                <div class="projects-list" id="projectsList">
+
+                    <article class="project-item" data-project="progress">
+
+                        <div class="project-number">01</div>
+
+                        <div class="project-main">
+                            <span>BRANDING</span>
+                            <h3>Alina Studio — Visual Identity</h3>
+                            <p>Brand strategy, identity system and packaging.</p>
+                        </div>
+
+                        <div class="project-client">
+                            <small>CLIENT</small>
+                            <strong>Alina Studio</strong>
+                        </div>
+
+                        <div class="project-progress-box">
+                            <div class="progress-top">
+                                <span>82%</span>
+                                <small>complete</small>
+                            </div>
+
+                            <div class="progress-track">
+                                <div style="width:82%"></div>
+                            </div>
+                        </div>
+
+                        <span class="project-tag progress-tag">In progress</span>
+
+                    </article>
+
+
+                    <article class="project-item" data-project="progress">
+
+                        <div class="project-number">02</div>
+
+                        <div class="project-main">
+                            <span>DEVELOPMENT</span>
+                            <h3>Nika & Co. — Digital Home</h3>
+                            <p>Modern website and digital product experience.</p>
+                        </div>
+
+                        <div class="project-client">
+                            <small>CLIENT</small>
+                            <strong>Nika & Co.</strong>
+                        </div>
+
+                        <div class="project-progress-box">
+                            <div class="progress-top">
+                                <span>64%</span>
+                                <small>complete</small>
+                            </div>
+
+                            <div class="progress-track">
+                                <div style="width:64%"></div>
+                            </div>
+                        </div>
+
+                        <span class="project-tag progress-tag">In progress</span>
+
+                    </article>
+
+
+                    <article class="project-item" data-project="review">
+
+                        <div class="project-number">03</div>
+
+                        <div class="project-main">
+                            <span>CONTENT</span>
+                            <h3>Studio Celine — Social Launch</h3>
+                            <p>Campaign strategy and 30-day content system.</p>
+                        </div>
+
+                        <div class="project-client">
+                            <small>CLIENT</small>
+                            <strong>Studio Celine</strong>
+                        </div>
+
+                        <div class="project-progress-box">
+                            <div class="progress-top">
+                                <span>94%</span>
+                                <small>complete</small>
+                            </div>
+
+                            <div class="progress-track">
+                                <div style="width:94%"></div>
+                            </div>
+                        </div>
+
+                        <span class="project-tag review-tag">Review</span>
+
+                    </article>
+
+
+                    <article class="project-item" data-project="done">
+
+                        <div class="project-number">04</div>
+
+                        <div class="project-main">
+                            <span>WEB DESIGN</span>
+                            <h3>Rumi Market — E-commerce</h3>
+                            <p>Complete storefront redesign and UX system.</p>
+                        </div>
+
+                        <div class="project-client">
+                            <small>CLIENT</small>
+                            <strong>Rumi Market</strong>
+                        </div>
+
+                        <div class="project-progress-box">
+                            <div class="progress-top">
+                                <span>100%</span>
+                                <small>complete</small>
+                            </div>
+
+                            <div class="progress-track">
+                                <div style="width:100%"></div>
+                            </div>
+                        </div>
+
+                        <span class="project-tag done-tag">Completed</span>
+
+                    </article>
+
+                </div>
+
+            </section>
+
+
+            <!-- ================= TRANSACTIONS ================= -->
+
+            <section class="page" id="page-transactions">
+
+                <div class="page-heading">
+
+                    <div>
+                        <span class="eyebrow">MONEY FLOW</span>
+
+                        <h2>
+                            Keep finances
+                            <em>clear.</em>
+                        </h2>
+
+                        <p>
+                            Track payments, invoices and business income.
+                        </p>
+                    </div>
+
+                    <button class="primary-button" id="invoiceBtn">
+                        + New invoice
+                    </button>
+
+                </div>
+
+
+                <div class="finance-cards">
+
+                    <div>
+                        <span>Total income</span>
+                        <strong>$84,260</strong>
+                        <small>↑ 18.4%</small>
+                    </div>
+
+                    <div>
+                        <span>Pending</span>
+                        <strong>$12,840</strong>
+                        <small class="pending-text">4 invoices</small>
+                    </div>
+
+                    <div>
+                        <span>This month</span>
+                        <strong>$18,920</strong>
+                        <small>October 2026</small>
+                    </div>
+
+                </div>
+
+
+                <article class="panel transaction-table-panel">
+
+                    <div class="panel-title">
+
+                        <div>
+                            <span class="section-label">PAYMENT HISTORY</span>
+                            <h3>All transactions</h3>
+                        </div>
+
+                        <div class="table-actions">
+                            <button class="filter-button">Filter</button>
+                            <button class="export-button">Export ↓</button>
+                        </div>
+
+                    </div>
+
+
+                    <div class="table-wrapper">
+
+                        <table>
+
+                            <thead>
+                                <tr>
+                                    <th>CLIENT</th>
+                                    <th>DESCRIPTION</th>
+                                    <th>DATE</th>
+                                    <th>AMOUNT</th>
+                                    <th>STATUS</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+
+                                <tr>
+                                    <td><strong>Alina Studio</strong></td>
+                                    <td>Brand identity</td>
+                                    <td>Oct 04</td>
+                                    <td><strong>$2,840</strong></td>
+                                    <td><span class="status paid">Paid</span></td>
+                                </tr>
+
+                                <tr>
+                                    <td><strong>Nika & Co.</strong></td>
+                                    <td>Website development</td>
+                                    <td>Oct 03</td>
+                                    <td><strong>$4,250</strong></td>
+                                    <td><span class="status pending">Pending</span></td>
+                                </tr>
+
+                                <tr>
+                                    <td><strong>Studio Celine</strong></td>
+                                    <td>Social media package</td>
+                                    <td>Oct 01</td>
+                                    <td><strong>$1,680</strong></td>
+                                    <td><span class="status paid">Paid</span></td>
+                                </tr>
+
+                                <tr>
+                                    <td><strong>Rumi Market</strong></td>
+                                    <td>E-commerce redesign</td>
+                                    <td>Sep 29</td>
+                                    <td><strong>$3,920</strong></td>
+                                    <td><span class="status paid">Paid</span></td>
+                                </tr>
+
+                                <tr>
+                                    <td><strong>Mira House</strong></td>
+                                    <td>Website consultation</td>
+                                    <td>Sep 26</td>
+                                    <td><strong>$1,200</strong></td>
+                                    <td><span class="status pending">Pending</span></td>
+                                </tr>
+
+                                <tr>
+                                    <td><strong>Oak & Olive</strong></td>
+                                    <td>Content strategy</td>
+                                    <td>Sep 23</td>
+                                    <td><strong>$2,400</strong></td>
+                                    <td><span class="status paid">Paid</span></td>
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+                </article>
+
+            </section>
+
+
+            <!-- ================= TEAM ================= -->
+
+            <section class="page" id="page-team">
+
+                <div class="page-heading">
+
+                    <div>
+                        <span class="eyebrow">THE PEOPLE</span>
+
+                        <h2>
+                            Great work needs
+                            <em>great people.</em>
+                        </h2>
+
+                        <p>
+                            Your team, their roles and what they're working on.
+                        </p>
+                    </div>
+
+                    <button class="primary-button" id="inviteBtn">
+                        + Invite member
+                    </button>
+
+                </div>
+
+
+                <div class="team-stats">
+
+                    <div>
+                        <span>Team members</span>
+                        <strong>08</strong>
+                    </div>
+
+                    <div>
+                        <span>Online now</span>
+                        <strong>06</strong>
+                    </div>
+
+                    <div>
+                        <span>Departments</span>
+                        <strong>04</strong>
+                    </div>
+
+                    <div>
+                        <span>Open tasks</span>
+                        <strong>23</strong>
+                    </div>
+
+                </div>
+
+
+                <div class="full-team-grid">
+
+                    <article class="person-card">
+
+                        <div class="person-cover sand-cover"></div>
+
+                        <div class="person-avatar">SA</div>
+
+                        <div class="person-body">
+                            <span class="person-status">● Online</span>
+                            <h3>Sarah Ahmed</h3>
+                            <p>Creative Director</p>
+
+                            <div class="person-tags">
+                                <span>Branding</span>
+                                <span>Strategy</span>
+                            </div>
+                        </div>
+
+                    </article>
+
+
+                    <article class="person-card">
+
+                        <div class="person-cover sage-cover"></div>
+
+                        <div class="person-avatar">MK</div>
+
+                        <div class="person-body">
+                            <span class="person-status">● Online</span>
+                            <h3>Maya Khan</h3>
+                            <p>Product Designer</p>
+
+                            <div class="person-tags">
+                                <span>UI/UX</span>
+                                <span>Research</span>
+                            </div>
+                        </div>
+
+                    </article>
+
+
+                    <article class="person-card">
+
+                        <div class="person-cover rose-cover"></div>
+
+                        <div class="person-avatar">ZA</div>
+
+                        <div class="person-body">
+                            <span class="person-status offline">● Offline</span>
+                            <h3>Zara Ali</h3>
+                            <p>Frontend Developer</p>
+
+                            <div class="person-tags">
+                                <span>Frontend</span>
+                                <span>React</span>
+                            </div>
+                        </div>
+
+                    </article>
+
+
+                    <article class="person-card">
+
+                        <div class="person-cover cream-cover"></div>
+
+                        <div class="person-avatar">HA</div>
+
+                        <div class="person-body">
+                            <span class="person-status">● Online</span>
+                            <h3>Hamza Asif</h3>
+                            <p>Content Strategist</p>
+
+                            <div class="person-tags">
+                                <span>Content</span>
+                                <span>SEO</span>
+                            </div>
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </section>
+
+
+            <!-- ================= CALENDAR ================= -->
+
+            <section class="page" id="page-calendar">
+
+                <div class="page-heading">
+
+                    <div>
+                        <span class="eyebrow">OCTOBER 2026</span>
+
+                        <h2>
+                            Your week,
+                            <em>beautifully planned.</em>
+                        </h2>
+
+                        <p>
+                            Meetings, deadlines and important moments.
+                        </p>
+                    </div>
+
+                    <button class="primary-button" id="eventBtn">
+                        + Add event
+                    </button>
+
+                </div>
+
+
+                <div class="calendar-layout">
+
+                    <article class="panel calendar-panel">
+
+                        <div class="calendar-head">
+                            <button id="prevMonth">←</button>
+                            <h3>October 2026</h3>
+                            <button id="nextMonth">→</button>
+                        </div>
+
+
+                        <div class="calendar-weekdays">
+                            <span>MON</span>
+                            <span>TUE</span>
+                            <span>WED</span>
+                            <span>THU</span>
+                            <span>FRI</span>
+                            <span>SAT</span>
+                            <span>SUN</span>
+                        </div>
+
+
+                        <div class="calendar-days">
+
+                            <span class="muted-day">28</span>
+                            <span class="muted-day">29</span>
+                            <span class="muted-day">30</span>
+
+                            <span>1</span>
+                            <span>2</span>
+                            <span>3</span>
+                            <span>4</span>
+
+                            <span class="today">5</span>
+                            <span>6</span>
+                            <span class="event-day">7<i></i></span>
+                            <span>8</span>
+                            <span>9</span>
+                            <span class="event-day">10<i></i></span>
+                            <span>11</span>
+
+                            <span>12</span>
+                            <span>13</span>
+                            <span>14</span>
+                            <span>15</span>
+                            <span class="event-day">16<i></i></span>
+                            <span>17</span>
+                            <span>18</span>
+
+                            <span>19</span>
+                            <span>20</span>
+                            <span>21</span>
+                            <span>22</span>
+                            <span>23</span>
+                            <span>24</span>
+                            <span>25</span>
+
+                            <span>26</span>
+                            <span>27</span>
+                            <span>28</span>
+                            <span>29</span>
+                            <span>30</span>
+                            <span>31</span>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="panel upcoming-panel">
+
+                        <div class="panel-title">
+
+                            <div>
+                                <span class="section-label">UP NEXT</span>
+                                <h3>Upcoming</h3>
+                            </div>
+
+                            <span class="member-count">3 events</span>
+
+                        </div>
+
+
+                        <div class="event-list">
+
+                            <div class="event">
+                                <div class="event-date">
+                                    <strong>07</strong>
+                                    <span>OCT</span>
+                                </div>
+
+                                <div>
+                                    <strong>Client presentation</strong>
+                                    <span>Alina Studio · 11:00 AM</span>
+                                </div>
+
+                                <i class="event-dot brown-dot-bg"></i>
+                            </div>
+
+
+                            <div class="event">
+                                <div class="event-date sage-date">
+                                    <strong>10</strong>
+                                    <span>OCT</span>
+                                </div>
+
+                                <div>
+                                    <strong>Team strategy</strong>
+                                    <span>Maison Studio · 2:00 PM</span>
+                                </div>
+
+                                <i class="event-dot sage-bg"></i>
+                            </div>
+
+
+                            <div class="event">
+                                <div class="event-date rose-date">
+                                    <strong>16</strong>
+                                    <span>OCT</span>
+                                </div>
+
+                                <div>
+                                    <strong>Project deadline</strong>
+                                    <span>Nika & Co. · 5:00 PM</span>
+                                </div>
+
+                                <i class="event-dot rose-bg"></i>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </section>
+
+
+            <!-- ================= SETTINGS ================= -->
+
+            <section class="page" id="page-settings">
+
+                <div class="page-heading">
+
+                    <div>
+                        <span class="eyebrow">YOUR WORKSPACE</span>
+
+                        <h2>
+                            Make it
+                            <em>yours.</em>
+                        </h2>
+
+                        <p>
+                            Manage your profile, workspace and preferences.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="settings-layout">
+
+                    <div class="settings-menu">
+
+                        <button class="setting-tab active" data-setting="profile">
+                            Profile
+                        </button>
+
+                        <button class="setting-tab" data-setting="workspace">
+                            Workspace
+                        </button>
+
+                        <button class="setting-tab" data-setting="notifications">
+                            Notifications
+                        </button>
+
+                        <button class="setting-tab" data-setting="security">
+                            Security
+                        </button>
+
+                    </div>
+
+
+                    <article class="panel settings-panel">
+
+                        <div class="settings-section active-setting" id="setting-profile">
+
+                            <span class="section-label">PROFILE</span>
+
+                            <h3>Personal information</h3>
+
+                            <div class="settings-profile">
+
+                                <div class="settings-avatar">HZ</div>
+
+                                <button class="secondary-button">
+                                    Change photo
+                                </button>
+
+                            </div>
+
+
+                            <div class="form-grid">
+
+                                <label>
+                                    Full name
+                                    <input value="Hijab Zahra">
+                                </label>
+
+                                <label>
+                                    Email
+                                    <input value="hello@maisonstudio.com">
+                                </label>
+
+                                <label>
+                                    Role
+                                    <input value="Administrator">
+                                </label>
+
+                                <label>
+                                    Location
+                                    <input value="Islamabad, Pakistan">
+                                </label>
+
+                            </div>
+
+                            <button class="primary-button save-settings">
+                                Save changes
+                            </button>
+
+                        </div>
+
+
+                        <div class="settings-section" id="setting-workspace">
+
+                            <span class="section-label">WORKSPACE</span>
+
+                            <h3>Maison Studio settings</h3>
+
+                            <div class="form-grid">
+
+                                <label>
+                                    Workspace name
+                                    <input value="Maison Studio">
+                                </label>
+
+                                <label>
+                                    Website
+                                    <input value="maisonstudio.com">
+                                </label>
+
+                                <label>
+                                    Currency
+                                    <select>
+                                        <option>USD — US Dollar</option>
+                                        <option>PKR — Pakistani Rupee</option>
+                                        <option>EUR — Euro</option>
+                                    </select>
+                                </label>
+
+                                <label>
+                                    Timezone
+                                    <select>
+                                        <option>GMT +05:00 Islamabad</option>
+                                        <option>GMT +00:00 London</option>
+                                        <option>GMT -05:00 New York</option>
+                                    </select>
+                                </label>
+
+                            </div>
+
+                            <button class="primary-button save-settings">
+                                Save workspace
+                            </button>
+
+                        </div>
+
+
+                        <div class="settings-section" id="setting-notifications">
+
+                            <span class="section-label">NOTIFICATIONS</span>
+
+                            <h3>How should we reach you?</h3>
+
+                            <div class="toggle-row">
+                                <div>
+                                    <strong>Project updates</strong>
+                                    <span>Receive notifications when projects change.</span>
+                                </div>
+
+                                <button class="toggle active"></button>
+                            </div>
+
+                            <div class="toggle-row">
+                                <div>
+                                    <strong>New transactions</strong>
+                                    <span>Get notified about new payments.</span>
+                                </div>
+
+                                <button class="toggle active"></button>
+                            </div>
+
+                            <div class="toggle-row">
+                                <div>
+                                    <strong>Weekly report</strong>
+                                    <span>Receive your business summary every Monday.</span>
+                                </div>
+
+                                <button class="toggle"></button>
+                            </div>
+
+                        </div>
+
+
+                        <div class="settings-section" id="setting-security">
+
+                            <span class="section-label">SECURITY</span>
+
+                            <h3>Account security</h3>
+
+                            <div class="security-box">
+                                <span>Two-factor authentication</span>
+                                <strong>Enabled</strong>
+                            </div>
+
+                            <div class="security-box">
+                                <span>Password</span>
+                                <button class="secondary-button">Change password</button>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </section>
+
+        </main>
+
+
+        <footer>
+            <span>Maison Studio © 2026</span>
+            <span>Designed with intention.</span>
+        </footer>
+
+    </div>
+
+</div>
+
+
+<!-- ================= SEARCH MODAL ================= -->
+
+<div class="modal" id="searchModal">
+
+    <div class="modal-box search-modal-box">
+
+        <button class="modal-close">×</button>
+
+        <span class="section-label">QUICK SEARCH</span>
+
+        <h3>What are you looking for?</h3>
+
+        <div class="modal-search">
+            ⌕
+            <input id="globalSearchInput" placeholder="Search anything...">
+        </div>
+
+        <div class="search-suggestions">
+            <span>Clients</span>
+            <span>Projects</span>
+            <span>Transactions</span>
+            <span>Team</span>
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- ================= FORM MODAL ================= -->
+
+<div class="modal" id="formModal">
+
+    <div class="modal-box">
+
+        <button class="modal-close">×</button>
+
+        <span class="section-label" id="modalLabel">NEW PROJECT</span>
+
+        <h3 id="modalTitle">Create something new.</h3>
+
+        <form id="dynamicForm">
+
+            <label>
+                Name
+                <input id="formName" required placeholder="Enter a name...">
+            </label>
+
+            <label>
+                Description
+                <textarea id="formDescription" placeholder="Tell us a little more..."></textarea>
+            </label>
+
+            <label>
+                Category
+                <select id="formCategory">
+                    <option>Branding</option>
+                    <option>Web Design</option>
+                    <option>Development</option>
+                    <option>Content</option>
+                    <option>Strategy</option>
+                </select>
+            </label>
+
+            <button class="primary-button full-button" type="submit">
+                Create
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+
+<!-- ================= TOAST ================= -->
+
+<div class="toast" id="toast">
+    <span>✓</span>
+    <p id="toastText">Saved successfully.</p>
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
